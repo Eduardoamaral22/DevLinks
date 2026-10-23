@@ -1,0 +1,85 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #161322;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil h1 {
+    font-size: 18px;
+}
+
+#tema {
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.links a {
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    border: 1px solid #837494;
+    border-radius: 8px;
+    background: #292334;
+}
+
+.links a:hover {
+    background: #49405e;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Tema claro */
+body.claro {
+    background: #f5f5f5;
+    color: #222;
+}
+
+body.claro .links a {
+    background: #e3e3e3;
+    color: #222;
+}
