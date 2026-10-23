@@ -1,45 +1,168 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu DevLinks</title>
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
 </head>
-<body>
-    <main class="container">
+<body id="index">
+<h1>Esse site é uma pagina informativa, com intuito de informar aquelas pessoas sobre um problema de saude mental que elas tem, mas tem poucas informações sobre</h1>
+<h2>Se algum desses problemas afeta sua vida, seja no meio social ou pessoal, não se sinta pressionado a esconder o que está passando. Sua saúde mental não define quem você é. Nunca sinta vergonha das dificuldades que enfrenta, pois elas não diminuem seu valor como pessoa. Lembre-se de que buscar ajuda não é sinal de fraqueza, mas de coragem.</h2>
 
-        <header class="perfil">
-            <img src="747307105_18132280276720232_6014457203582583947_n.jpg" alt="Minha foto">
-            <h1>@eduardoamaral_</h1>
-        </header>
+    
 
-        <button id="tema" type="button">
-            Mudar tema
-        </button>
+<form id="formulario" onsubmit="irParaPagina(event)">
 
-        <nav class="links">
-            <a href="https://github.com/Eduardoamaral22" target="_blank">
-                Meu GitHub
-            </a>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" >
 
-            <a href="https://linkedin.com/" target="_blank">
-                Meu LinkedIn
-            </a>
+        <br><br>
+        <label for="idade">Qual é a sua idade?</label>
+<input
+    type="number"
+    id="idade"
+    min="1"
+    max="120"
+    placeholder="Digite sua idade"
+    required>
 
-            <a href="portifolio.html" target="_blank">
-                Meu portfólio
-            </a>
+<br><br>
 
-        </nav>
+<p>Você já conhece o assunto escolhido?</p>
 
-        <footer>
-            <p>Feito com HTML, CSS e JavaScript</p>
-        </footer>
+<input type="radio" id="sim" name="conhece" value="sim">
+<label for="sim">Sim</label>
 
-    </main>
+<input type="radio" id="nao" name="conhece" value="nao">
+<label for="nao">Não</label>
+         <br><br>
+        <label for="escolha">Escolha um desses principais problemas que voce gostaria de saber:</label>
 
-    <script src="script.js"></script>
+        <select id="escolha" required>
+            <option value="">Selecione uma opção</option>
+            <option value="Ansiedade.html">ANSIEDADE</option>
+            <option value="Depressao.html">DEPRESSÃO</option>
+            <option value="TDAH.html">TDAH</option>
+            <option value="Estresse.html">ESTRESSE CRONICO</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    
+    <div class="organizacao">
+    <section id="video">
+    <h2>Por que ainda falamos tão pouco sobre saúde mental?</h2>
+
+    <p>
+        Apesar de sua importância, a saúde mental ainda é um assunto
+        cercado de preconceitos, desinformação e medo de julgamentos.
+        Muitas pessoas deixam de compartilhar suas dificuldades
+        por receio de serem incompreendidas.
+
+        Falar sobre saúde mental é fundamental para combater
+        o preconceito, incentivar a busca por ajuda e mostrar
+        que ninguém precisa enfrentar seus problemas sozinho.
+    </p>
+
+    <iframe
+    
+        src="https://www.youtube.com/embed/UwyE_XIQ7DA"
+        title="Vídeo sobre saúde mental"
+        allowfullscreen>
+    </iframe>
+</section>
+<section id="dicas">
+
+    <h2>Dicas para cuidar da saúde mental</h2>
+
+    <ul>
+        <li>Pratique atividades físicas regularmente.</li>
+        <li>Mantenha uma rotina de sono saudável.</li>
+        <li>Converse com pessoas de confiança.</li>
+        <li>Reserve momentos para descansar.</li>
+        <li>Procure ajuda profissional quando necessário.</li>
+    </ul>
+
+</section>
+<section id="tabela">
+
+    <h2>Comparação entre condições de saúde mental</h2>
+
+    <table>
+        <tr>
+            <th>Condição</th>
+            <th>Características comuns</th>
+            <th>Possíveis cuidados</th>
+        </tr>
+
+        <tr>
+            <td>Ansiedade</td>
+            <td>Preocupação intensa e inquietação</td>
+            <td>Psicoterapia e técnicas de relaxamento</td>
+        </tr>
+
+        <tr>
+            <td>Depressão</td>
+            <td>Tristeza persistente e perda de interesse</td>
+            <td>Acompanhamento psicológico e médico</td>
+        </tr>
+
+        <tr>
+            <td>TDAH</td>
+            <td>Desatenção, impulsividade e hiperatividade</td>
+            <td>Estratégias de organização e apoio especializado</td>
+        </tr>
+
+        <tr>
+            <td>Estresse crônico</td>
+            <td>Cansaço, irritabilidade e problemas de sono</td>
+            <td>Descanso e redução de sobrecargas</td>
+        </tr>
+    </table>
+
+</section>
+</div>
+
+
+<script src="script.js"></script>
+
+<aside id="galeria-calma">
+
+    <h2>Imagens que transmitem tranquilidade</h2>
+
+    <p>
+        Obs: imagens tranquilas podem ajudar
+        a acalmar pensamentos agitados.
+    </p>
+
+    <div id="imagens-calma">
+        <img src="cachoeira.jpg"
+             alt="Pessoa meditando perto de uma cachoeira">
+
+        <img src="mar.jpg"
+             alt="Mar calmo ao entardecer">
+
+        <img src="rede.jpg"
+             alt="Pessoa descansando em uma rede na natureza">
+    </div>
+
+</aside>
+<section id="citacao">
+
+    <h2>Uma reflexão sobre saúde mental</h2>
+
+    <blockquote>
+        A saúde é um estado de completo bem-estar
+        físico, mental e social.
+    </blockquote>
+
+    <p>Fonte: Organização Mundial da Saúde (OMS).</p>
+
+</section>
 </body>
 </html>

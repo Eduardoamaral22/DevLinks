@@ -1,85 +1,92 @@
-
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background: #161322;
-    color: white;
     font-family: Arial, sans-serif;
 }
-
-.container {
-    width: 90%;
-    max-width: 400px;
-    margin: 50px auto;
-
+body {
+    background-color: lightblue;
+}
+h1{
+color:azure;
+font-size: 20px;
+}
+h2{
+color:azure;
+font-size: 20px;
+}
+header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 25px;
 }
-
-.perfil {
+#caixa {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 20px;
 }
 
-.perfil img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+#caixa div {
+    width: 40%;
 }
 
-.perfil h1 {
-    font-size: 18px;
+#texto1, #texto2 {
+    text-align: center;
 }
 
-#tema {
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+#oque, #calma {
     width: 100%;
 }
-
-.links a {
-    padding: 16px;
-    text-align: center;
+p {
+  color:azure;  
+}
+#video iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+width: 560px;
+	height: 315px;
+}
+#tabela {
+    padding: 20px;
+  color:azure;
+}
+.organizacao {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+a {
     text-decoration: none;
-    color: white;
-
-    border: 1px solid #837494;
-    border-radius: 8px;
-    background: #292334;
+}
+#galeria-calma {
+    padding: 20px;
+    margin-top: 30px;
 }
 
-.links a:hover {
-    background: #49405e;
+#imagens-calma {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-
-footer {
+    
+#imagens-calma img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+#citacao {
     text-align: center;
-    font-size: 12px;
+    padding: 20px;
 }
 
-/* Tema claro */
-body.claro {
-    background: #f5f5f5;
-    color: #222;
-}
-
-body.claro .links a {
-    background: #e3e3e3;
-    color: #222;
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    color: darkblue;
 }
